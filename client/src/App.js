@@ -18,7 +18,7 @@ function App() {
     <Route path='/Project_Add' element={<ProjectAdd/>} />
     <Route path='/Project_Update/:id' element={<ProjectUpdate/>} />
     <Route path='/Project/Task' element={<TaskList/>} />
-    <Route path='/Project/Task_Add' element={<TaskAdd/>} />
+    <Route path='/Project/Task_Add/:id' element={<TaskAdd/>} />
     <Route path='/Project/Task_Update/:id' element={<TaskUpdate/>} />
     </Route>
    </Routes>

@@ -1,4 +1,5 @@
 const express = require("express");
+var cors = require('cors')
 const mongoose = require("mongoose");
 const BodyParser = require("body-parser");
 const app = express();
@@ -8,7 +9,7 @@ const taskApi = require("./controlleur/controlleurTask");
 
 
 
-
+app.use(cors());
 
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({
